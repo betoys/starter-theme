@@ -20,6 +20,7 @@ jobs:
           SHOPIFY_THEME_ID: ${{ secrets.SHOPIFY_THEME_ID }}
           SHOPIFY_STORE_URL: ${{ secrets. SHOPIFY_STORE_URL }}
   slack:
+    runs-on: macos-latest
     steps:
       - name: Slack Notification
         uses: sonots/slack-notice-action@v3
