@@ -11,5 +11,7 @@ jobs:
       - uses: actions/checkout@v1
       - name: Install themekit
         run: curl -s https://shopify.github.io/themekit/scripts/install.py | python
+      - name: Print env
+        run: env
       - name: Deploy shopify theme
         run: cd src; theme deploy
