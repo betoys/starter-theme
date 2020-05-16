@@ -1,4 +1,4 @@
 development:
-  password: ${{ secrets.SHOPIFY_PASSWORD }}
-  theme_id: ${{ secrets.SHOPIFY_THEME_ID }}
-  store: ${{ secrets.SHOPIFY_STORE_URL }}
+  password: "${{ secrets.SHOPIFY_PASSWORD }}"
+  theme_id: "${{ secrets.SHOPIFY_THEME_ID }}"
+  store: "${{ secrets.SHOPIFY_STORE_URL }}"
