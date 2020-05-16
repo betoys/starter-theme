@@ -12,7 +12,7 @@ jobs:
       - name: Install themekit
         run: curl -s https://shopify.github.io/themekit/scripts/install.py | python
       - name: Deploy shopify theme
-        run: c src; theme deploy
+        run: cd src; theme deploy
         env:
           SHOPIFY_PASSWORD: ${{ secrets.SHOPIFY_PASSWORD }}
           SHOPIFY_THEME_ID: ${{ secrets.SHOPIFY_THEME_ID }}
